@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from "react";
+import "./App.css";
+
+import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
+
+import {
+  Navbar,
+  HeroSection,
+  About,
+  Education,
+  Work,
+  Contact,
+} from "./components";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Navbar />
+      <HeroSection />
+      <About />
+      <Education />
+      <Work />
+      <Contact />
+      <footer className="footer">
+        <h3>
+          Design inspiration from{" "}
+          <span className="boldText">Brittany Chiang</span> and Build by
+          <span className="boldText">Shuaib Ahmed</span>
+        </h3>
+        <div>
+          <a
+            href="https://github.com/Shuaib-Ahmed"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsGithub />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/shuaib-ahmed-0962531a6/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            href="https://www.instagram.com/shuaib_.ahmed/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <BsInstagram />
+          </a>
+        </div>
+      </footer>
+    </Fragment>
   );
 }
 

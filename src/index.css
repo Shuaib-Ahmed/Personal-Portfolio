@@ -1,13 +1,73 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  font-size: 10px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+
+  /* Css Variable */
+
+  /* Colors */
+  --primary-background-color: rgb(7, 21, 49);
+  --primary-text-color: rgb(223, 223, 223);
+  --secondary-text-color: #f55;
+  --tertiary-text-color: rgb(189, 189, 189);
+
+  --overlay: rgba(227, 62, 62, 0.342);
+  --dark-overlay: greenyellow;
+
+  /* Transition */
+  --main-transition: all 0.2s ease-in-out;
+
+  /* Line Height */
+  --line-height: 1.5;
+
+  background-color: var(--primary-background-color);
+  color: var(--primary-text-color);
+
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.boldText {
+  color: var(--secondary-text-color);
+}
+
+.sectionHeader {
+  font-size: 3.5rem;
+
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 2.5rem;
+}
+.sectionHeader .line {
+  margin-left: 2rem;
+  width: 20rem;
+  height: 0.1rem;
+  background-color: var(--tertiary-text-color);
+}
+
+@media only screen and (max-width: 556px) {
+  :root {
+    font-size: 8px;
+  }
+  .sectionHeader .line {
+    width: 10rem;
+  }
 }

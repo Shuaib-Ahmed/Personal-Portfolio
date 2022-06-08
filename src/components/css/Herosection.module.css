@@ -1,0 +1,60 @@
+.container {
+  width: 90vw;
+  height: calc(100vh - 100px);
+  margin: 3rem auto;
+}
+.container .smallText {
+  font-size: 2rem;
+  color: var(--secondary-text-color);
+}
+.container .nameText {
+  font-size: 7rem;
+  margin: 1.5rem 0;
+}
+.container .skillText {
+  font-size: 5.5rem;
+}
+.container .introText {
+  font-size: 1.75rem;
+  margin: 4rem 0;
+  line-height: var(--line-height);
+  color: var(--tertiary-text-color);
+  max-width: 60rem;
+}
+.container .button {
+  font-size: 1.5rem;
+  color: var(--secondary-text-color);
+  border: 0.2rem solid var(--secondary-text-color);
+  margin: 1rem 0;
+  padding: 1.75rem 2rem;
+
+  transition: var(--main-transition);
+}
+.container .button:hover {
+  color: var(--primary-text-color);
+  border-color: var(--primary-text-color);
+}
+
+@media only screen and (max-width: 656px) {
+  .container .nameText {
+    font-size: 5.5rem;
+  }
+  .container .skillText {
+    font-size: 4.5rem;
+  }
+}
+
+@media only screen and (max-width: 556px) {
+  .container {
+    height: calc(80vh - 100px);
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .container .nameText {
+    font-size: 4rem;
+  }
+  .container .skillText {
+    font-size: 4rem;
+  }
+}

@@ -1,0 +1,21 @@
+.container{
+    width: 90vw;
+    margin: 10rem auto;
+}
+
+.container .contentContainer h3{
+    font-size: 3rem;
+    margin: 1rem 0;
+}
+.container .contentContainer h4{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.container .contentContainer p{
+    font-size: 1.75rem;
+}
+
+.container .date{
+    font-size: 3rem;
+    color: var(--primary-text-color);
+}

@@ -1,0 +1,31 @@
+.container {
+  width: 50vw;
+  margin: 0 auto;
+}
+.container h3 {
+  font-size: 2rem;
+  color: var(--tertiary-text-color);
+  max-width: 500px;
+  line-height: var(--line-height);
+}
+.container .btn {
+  display: inline-block;
+  font-size: 2rem;
+  margin: 2rem 0;
+  padding: 1rem 2rem;
+  color: var(--primary-text-color);
+
+  background: var(--secondary-text-color);
+  border: 0.2rem solid var(--secondary-text-color);
+  transition: var(--main-transition);
+}
+.container .btn:hover {
+  background: none;
+  border: 0.2rem solid var(--primary-text-color);
+}
+
+@media only screen and (max-width: 776px){
+    .container{
+        width: 80vw
+    }
+}
